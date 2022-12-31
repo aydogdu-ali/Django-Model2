@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from fspath.views import selam # selam fonksiyonunu fspath view den import ettik.
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/', selam), # home/ url gelirse selam fonksiyonunu döndürür.
 ]

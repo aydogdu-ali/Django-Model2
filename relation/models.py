@@ -18,10 +18,12 @@ class Address(models.Model):
     adress = models.CharField(max_length=100)
     city = models.CharField(max_length=20)
     phone = models.CharField(max_length=20)
-    user = models.ForeignKey(User, on_delete=models.CASCADE) # BURADA USER İLE ADRESİ EŞLEŞTİRME İŞLEMİ YAPTIK. YANİ İLİŞKİLENDİRDİK. BİRDEN FAZLA ADRESİ OLABİLİR.
+    user = models.ForeignKey(User, on_delete=models.CASCADE) # BURADA USER İLE ADRESİ EŞLEŞTİRME İŞLEMİ YAPTIK.
+    #YANİ İLİŞKİLENDİRDİK. BİRDEN FAZLA ADRESİ OLABİLİR.
 
     def __str__(self):
-        return self.name
+        return f"{self.name} {self.user.username}"
+
 
 class Product(models.Model):
     name = models.CharField(max_length=100)

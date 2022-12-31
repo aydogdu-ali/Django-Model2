@@ -17,4 +17,5 @@ ONE-TO-MANY BİR KULLANICININ BİRDEN FAZLA ADRESİ OLABİLİR.
 ![image](https://user-images.githubusercontent.com/108414013/210156905-e3e24921-3914-4a59-ba24-d75bf0dffcd5.png)
 
 
-![image](https://user-images.githubusercontent.com/108414013/210156907-92c8353a-887a-4326-9c53-7cff873ee274.png)
+![image](https://user-images.githubusercontent.com/108414013/210156920-aea71767-3178-4f79-946f-4961efca4b07.png)
+

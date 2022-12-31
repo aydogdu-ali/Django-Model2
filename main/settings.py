@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #myapps
     'fspath', # bizim oluşturduğumuz appleri ekleriz.
+    'relation', # bizim oluşturduğumuz appleri ekleriz.
 ]
 
 MIDDLEWARE = [
@@ -119,7 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = 'media/' #tablo'da IMAGE tanımlanmışsa ımage tutulacağı yer. 
 
+MEDIA_ROOT =BASE_DIR / 'media/' # yüklenen ımagelerin tutulacağı ana klasör
+ 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

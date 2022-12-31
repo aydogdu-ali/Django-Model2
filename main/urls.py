@@ -16,8 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from fspath.views import selam # selam fonksiyonunu fspath view den import ettik.
+# ımage dosyaları için import ettim
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', selam), # home/ url gelirse selam fonksiyonunu döndürür.
+
 ]
+
+# ımage dosyaları için ekleme yapıyorum.
+urlpatterns += static(settings.MEDIA_URL,document_root= settings.MEDIA_ROOT)

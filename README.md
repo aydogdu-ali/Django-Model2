@@ -15,9 +15,13 @@ ONE-TO-MANY BİR KULLANICININ BİRDEN FAZLA ADRESİ OLABİLİR.
  
  Bu uygulamayı ayağı kaldırmak için sırasıyla;
 python -m venv env
+
 source env/Scripts/Activate (windows-bash için)
+
 pip install -r requirements.txt (paketleri yüklemek için)
+
 python manage.py createsuperuser
+
 python manage.py runserver komutlarını çalıştırabilirsiniz.
 
 
